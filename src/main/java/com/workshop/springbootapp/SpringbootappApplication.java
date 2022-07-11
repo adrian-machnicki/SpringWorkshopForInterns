@@ -1,7 +1,5 @@
 package com.workshop.springbootapp;
 
-import com.workshop.springbootapp.config.SecretServiceUserConfig;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +12,9 @@ public class SpringbootappApplication {
 
 		System.out.println("== Hello in " + context.getApplicationName());
 		System.out.println("== Environment: " + context.getEnvironment());
+
+		String bean = context.getBean("particularBean", String.class);
+		System.out.println("particularBean = " + bean);
 	}
 
 }

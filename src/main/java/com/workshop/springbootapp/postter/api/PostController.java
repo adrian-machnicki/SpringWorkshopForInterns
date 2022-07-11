@@ -3,10 +3,10 @@ package com.workshop.springbootapp.postter.api;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.OK;
 
+import com.workshop.springbootapp.postter.api.request.CreatePostRequest;
+import com.workshop.springbootapp.postter.exception.PostValidationException;
 import com.workshop.springbootapp.postter.model.PostModel;
 import com.workshop.springbootapp.postter.service.PostService;
-import com.workshop.springbootapp.postter.exception.PostValidationException;
-import com.workshop.springbootapp.postter.api.request.CreatePostRequest;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.validation.Errors;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
