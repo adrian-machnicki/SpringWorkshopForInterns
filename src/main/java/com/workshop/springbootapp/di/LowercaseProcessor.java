@@ -1,9 +1,10 @@
 package com.workshop.springbootapp.di;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-//@Primary
-@Component("defaultStringProcessor")
+@Primary
+@Component
 public class LowercaseProcessor implements StringProcessor {
 
 

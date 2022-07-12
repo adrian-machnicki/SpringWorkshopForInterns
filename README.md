@@ -13,9 +13,10 @@ I . Theoretical part
   1. Why to use any framework like Spring?
   2. What is Spring Framework?
   3. What is Spring Boot?
-  4. Spring Container
-  5. Spring Bean
-  6. Bootstrapping Spring Boot App
+  4. Inversion of Control & Dependency Injection
+  5. Spring Container
+  6. Spring Bean
+  7. Bootstrapping Spring Boot App
 
 II. Practical part
   7. Digging into code

@@ -1,6 +1,5 @@
 package com.workshop.springbootapp.hello.api;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,15 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloController {
 
-    private final String serviceMode;
-
-    public HelloController(@Value("${hello.service.mode}") String serviceMode) {
-        this.serviceMode = serviceMode;
-    }
-
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from Spring Boot app! Usability mode: " + serviceMode ;
+        return "Hello from Spring Boot app!!!!! Usability mode: ";
     }
 
     @GetMapping("/hello_personalised/{name}")

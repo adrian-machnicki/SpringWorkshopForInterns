@@ -1,14 +1,13 @@
 package com.workshop.springbootapp.di;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FirstnameConverter {
 
-    private final StringProcessor stringProcessor;
+    private StringProcessor stringProcessor;
 
-    public FirstnameConverter(@Qualifier("defaultStringProcessor") StringProcessor stringProcessor) {
+    public FirstnameConverter(StringProcessor stringProcessor) {
         this.stringProcessor = stringProcessor;
     }
 
